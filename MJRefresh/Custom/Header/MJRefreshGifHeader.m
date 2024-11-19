@@ -96,8 +96,14 @@
     if (self.gifView.constraints.count) return;
     
     self.gifView.frame = self.bounds;
+    
+    // 为了fix偶尔下拉刷新动画变得和imageView一样大,把gifview的高度设置为22， UIViewContentModeCenter改为UIViewContentModeScaleAspectFit
+    self.gifView.mj_h = 22;
+    self.gifView.mj_y = (self.mj_h - self.gifView.mj_h) * 0.5;
+
+    
     if (self.stateLabel.hidden && self.lastUpdatedTimeLabel.hidden) {
-        self.gifView.contentMode = UIViewContentModeCenter;
+        self.gifView.contentMode = UIViewContentModeScaleAspectFit;//UIViewContentModeCenter;
     } else {
         self.gifView.contentMode = UIViewContentModeRight;
         

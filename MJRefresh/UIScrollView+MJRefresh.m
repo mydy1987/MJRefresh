@@ -87,12 +87,12 @@ static const char MJRefreshTrailerKey = '\0';
     return self.mj_footer;
 }
 
-- (void)setHeader:(MJRefreshHeader *)header
+- (void)setGetHeader:(MJRefreshHeader *)header
 {
     self.mj_header = header;
 }
 
-- (MJRefreshHeader *)header
+- (MJRefreshHeader *)getHeader
 {
     return self.mj_header;
 }

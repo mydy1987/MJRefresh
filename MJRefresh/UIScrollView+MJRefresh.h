@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIScrollView (MJRefresh)
 /** 下拉刷新控件 */
 @property (strong, nonatomic, nullable) MJRefreshHeader *mj_header;
-@property (strong, nonatomic, nullable) MJRefreshHeader *header MJRefreshDeprecated("使用mj_header");
+@property (strong, nonatomic, nullable) MJRefreshHeader *getHeader MJRefreshDeprecated("使用mj_header");
 /** 上拉刷新控件 */
 @property (strong, nonatomic, nullable) MJRefreshFooter *mj_footer;
 @property (strong, nonatomic, nullable) MJRefreshFooter *footer MJRefreshDeprecated("使用mj_footer");
