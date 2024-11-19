@@ -29,6 +29,7 @@ FOUNDATION_EXPORT const unsigned char MJRefreshVersionString[];
 
 #import "MJRefreshNormalHeader.h"
 #import "MJRefreshGifHeader.h"
+#import "MJBitKanHeader.h"
 
 #import "MJRefreshBackNormalFooter.h"
 #import "MJRefreshBackGifFooter.h"
